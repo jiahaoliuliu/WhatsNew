@@ -38,21 +38,11 @@
             android:layout_height="match_parent"
             android:src="@drawable/ic_device_frame"
             />
-        <!-- Content -->
-        <FrameLayout
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/content_view_pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            >
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_device_content"
-                />
-        </FrameLayout>
+            />
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
