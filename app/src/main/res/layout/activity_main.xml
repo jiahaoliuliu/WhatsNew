@@ -31,18 +31,23 @@
         app:layout_constraintBottom_toBottomOf="@id/guideline_device_frame_bottom"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        >
-        <!-- Frame -->
-        <ImageView
+        android:background="@drawable/ic_device_frame"
+        android:paddingTop="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_device_frame"
-            />
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/content_view_pager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            app:cardCornerRadius="10dp"
+            >
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/content_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_red_dark"
+                />
+        </androidx.cardview.widget.CardView>
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
